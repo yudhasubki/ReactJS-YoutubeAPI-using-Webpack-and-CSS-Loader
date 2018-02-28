@@ -1,14 +1,5 @@
 import React, {Component} from 'react';
 
-// const VideoListItem = ({video,onVideoSelect}) =>{ 
-//     return(
-//         <li onClick={() => onVideoSelect(video)}>
-//             <img src={video.snippet.thumbnails.default.url} />
-//             <p> {video.snippet.title} </p>
-//         </li>       
-//     );
-// }
-
 class VideoListItem extends Component{
     constructor(props){
         super(props);
@@ -16,7 +7,6 @@ class VideoListItem extends Component{
     }
 
     onVideoSelect(){
-        console.log(this.props.onVideoSelect);
         this.props.onVideoSelect(this.props.video);
     }
 
